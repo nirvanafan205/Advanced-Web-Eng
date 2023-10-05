@@ -14,6 +14,16 @@
     <script src="https://kit.fontawesome.com/cd01da16da.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,400&display=swap" rel="stylesheet">
 
+    <!-- Media Query for Responsive Layout -->
+    <style>
+        @media (max-width: 768px) {
+            /* Specify the maximum width for stacking (e.g., 768px) */
+            /* Update the flex-direction to stack columns on smaller screens */
+            .two-column, .three-column {
+                flex-direction: column !important;
+            }
+        }
+    </style>
 </head>
 
 <body style="background-color: black; text-align: center; font-family: 'Lato', sans-serif; margin: 0; padding: 0;">
@@ -54,71 +64,68 @@
                 </p>
 
                 <!-- Two Column Component -->
-                <div style="display: flex; justify-content: space-between; margin: 20px;">
-
-                    <!-- Two Column Component with GIFs -->
-                    <div style="display: flex; justify-content: space-between; margin: 20px;">
-
-                        <div
-                            style="flex: 1; margin: 10px; padding: 20px; background-color: #f2f2f2; text-align: center;">
-                            <img src="https://cdn.glitch.global/8bf3b54c-ca6a-41a7-ba68-92bd47daf2b6/%24crim.gif?v=1696479964853"
-                                alt="$crim$"
-                                style="width: 200px; height: 200px; margin: 20px auto; border-radius: 5rem; box-shadow: 0 15px 10px white;">
-                            <h2 style="color: black;">$crim</h2>
-                        </div>
-
-                        <div
-                            style="flex: 1; margin: 10px; padding: 20px; background-color: #f2f2f2; text-align: center;">
-                            <img src="https://cdn.glitch.global/8bf3b54c-ca6a-41a7-ba68-92bd47daf2b6/RubydaCherry.gif?v=1696481899520"
-                                alt="Ruby Da Cherry"
-                                style="width: 200px; height: 200px; margin: 20px auto; border-radius: 5rem; box-shadow: 0 15px 10px white;">
-                            <h2 style="color: black;">Ruby Da Cherry</h2>
-                        </div>
-
+                <div class="two-column" style="display: flex; justify-content: space-between; margin: 20px;">
+                    <!-- Scrim (Left column) -->
+                    <div
+                        style="margin: 10px; padding: 20px; background-color: purple; text-align: center;">
+                        <!-- Content for left column -->
+                        <img src="https://cdn.glitch.global/8bf3b54c-ca6a-41a7-ba68-92bd47daf2b6/%24crim.gif?v=1696479964853"
+                            alt="$crim$"
+                            style="width: 200px; height: 200px; margin: 20px auto; border-radius: 5rem; box-shadow: 0 15px 10px white;">
+                        <h2 style="color: black;">$crim</h2>
                     </div>
 
-
+                    <!-- Ruby Da Cherry (Right column with left padding) -->
+                    <div
+                        style="margin: 10px; padding: 20px; background-color: grey; text-align: center; padding-left: 100px;">
+                        <!-- Content for right column -->
+                        <img src="https://cdn.glitch.global/8bf3b54c-ca6a-41a7-ba68-92bd47daf2b6/RubydaCherry.gif?v=1696481899520"
+                            alt="Ruby Da Cherry"
+                            style="width: 200px; height: 200px; margin: 20px auto; border-radius: 5rem; box-shadow: 0 15px 10px white;">
+                        <h2 style="color: black;">Ruby Da Cherry</h2>
+                    </div>
                 </div>
 
-                <!--- three columns --->
-                <div style="display: flex; justify-content: space-between; margin: 20px;">
-
-                    <!-- Scrim -->
-                    <div style="flex: 1; margin: 10px; padding: 20px; background-color: #f2f2f2; text-align: center;">
+                <!-- Three Column Component -->
+                <div class="three-column" style="display: flex; justify-content: space-between; margin: 20px;">
+                    <!-- Column 1 -->
+                    <div
+                        style="margin: 10px; padding: 20px; background-color: #f2f2f2; text-align: center;">
+                        <!-- Content for column 1 -->
                         <img src="https://placekitten.com/200/200" alt="Image 1"
                             style="width: 100%; height: auto; border-radius: 5rem;">
                         <h2 style="color: black;">Column 1</h2>
                         <p style="color: grey;">Talk about $crim</p>
                     </div>
 
-                    <!--- the band -->
-                    <!--- the band -->
+                    <!-- Column 2 -->
                     <div
-                        style="flex: 1; margin: 5px; padding: 10px; background-color: #f2f2f2; text-align: center; height: 400px;">
+                        style="margin: 10px; padding: 20px; background-color: #f2f2f2; text-align: center;">
+                        <!-- Content for column 2 -->
                         <img src="https://placekitten.com/200/200" alt="Image 2"
                             style="max-width: 100%; max-height: 70%; border-radius: 5rem;">
                         <h2 style="color: black;">Column 2</h2>
                         <p style="color: grey; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-                            $uicideboy$ is an American hip-hop duo from New Orleans, Louisiana, founded in 2014 by
-                            cousins Ruby da Cherry and $crim. <br>
-                            Via the music sharing platform SoundCloud, the duo rose to popularity for their abrasive,
-                            self-produced beats, as well as their harsh lyrical content and themes prominently featuring
-                            substance use disorder and suicidal ideation. <br>
-                            The duo are considered one of the most popular artists in the underground rap scene. <br>
-                            They own and operate their own label, G*59 Records, under which all of their music is
-                            signed. <br>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                            unknown printer took a galley of type and scrambled it to make a type specimen book. <br>
+                            It has survived not only five centuries, but also the leap into electronic typesetting,
+                            remaining essentially unchanged. <br>
+                            It was popularised in the 1960s with the release of Letraset sheets containing Lorem
+                            Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
+                            including versions of Lorem Ipsum <br>
                         </p>
                     </div>
 
-
-                    <!-- Ruby -->
-                    <div style="flex: 1; margin: 10px; padding: 20px; background-color: #f2f2f2; text-align: center;">
+                    <!-- Column 3 -->
+                    <div
+                        style="margin: 10px; padding: 20px; background-color: #f2f2f2; text-align: center;">
+                        <!-- Content for column 3 -->
                         <img src="https://placekitten.com/200/200" alt="Image 3"
                             style="width: 100%; height: auto; border-radius: 5rem;">
                         <h2 style="color: black;">Column 3</h2>
                         <p style="color: grey;">Talk about Ruby Da Cherry</p>
                     </div>
-
                 </div>
 
                 <!-- Centered Button -->
@@ -145,6 +152,7 @@
 </body>
 
 </html>
+
 
 <!--- 
      
