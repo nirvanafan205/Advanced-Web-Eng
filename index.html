@@ -4,145 +4,172 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Campaign</title>
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            position: relative;
-            margin: 0;
-            padding: 0;
-            background: url('Stars.png');
-            background-repeat: repeat;
-            background-attachment: fixed;
-            background-size: auto;
-        }
-
-        /* Twinkling background with animation */
-        body::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            width: 100%;
-            height: 100%;
-            display: block;
-            background: transparent url('Twinkling.png') repeat top center;
-            z-index: -1;
-            animation: move-twink-back 200s linear infinite;
-        }
-
-        @keyframes move-twink-back {
-            from {
-                background-position: 0 0;
-            }
-
-            to {
-                background-position: -10000px 5000px;
-            }
-        }
-
-        /* Stars background without animation */
-        .stars {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            width: 100%;
-            height: 100%;
-            display: block;
-            z-index: 0;
-        }
-
-        /* Twinkling background with animation */
-        .twinkling {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            width: 100%;
-            height: 100%;
-            display: block;
-            z-index: 1;
-            animation: move-twink-back 200s linear infinite;
-        }
-
-        /* Adjusts to tablets, phones, and window size changes*/
-        @media (max-width: 850px) {
-
-            /* Hero image and log are responsive */
-            img[src="G59.jpg"],
-            img[src="G59Logo.jpg"] {
-                max-width: 100%;
-                height: auto;
-            }
-
-            /* text is responsive */
-            p {
-                font-size: 16px;
-                line-height: 1.5;
-                margin: 10px;
-                padding: 10px;
-            }
-
-            /* Headline is responsive */
-            h1 {
-                font-size: 1.5rem; /* Adjust font size for the heading */
-            }
-        }
-    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/cd01da16da.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,400&display=swap" rel="stylesheet">
 
 </head>
 
-<body style="background-color: black; text-align: center;">
+<body style="background-color: black; text-align: center; font-family: 'Lato', sans-serif; margin: 0; padding: 0;">
 
     <!-- Logo -->
-    <img src="G59Logo.jpg" alt="$uicideboy$" style="border-radius: 10rem;">
+    <img src="https://cdn.glitch.global/06d3c37a-0b44-4687-9ab7-befd31490571/G59Logo.jpg?v=1694993476760"
+        alt="$uicideboy$"
+        style="max-width: 100%; height: auto; display: block; border-radius: 10rem; margin: 20px auto;">
 
     <div style="background: linear-gradient(to right, blue, purple); height: 5px;"></div>
 
-    <!-- Hero image and background image: starry night -->
-    <div style="margin-top: 20px; text-align: center;">
+    <!-- Single Column Table Layout -->
+    <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center"
+        style="max-width: 600px; width: 100%; margin: 0 auto;">
+        <tr>
+            <td style="padding: 20px;">
 
-        <!-- Welcome message -->
-        <h1 style="color: rebeccapurple; text-align: center;">Grey Day Tour 2023 - Mental Health Awareness</h1>
+                <!-- Welcome message -->
+                <h1 style="color: rebeccapurple; text-align: center;">Grey Day Tour 2023 - Mental Health Awareness</h1>
 
-        <!-- Hero Image -->
-        <img src="G59.jpg" alt="$uicideboy$"
-            style="margin-bottom: 20px; border-radius: 5rem; box-shadow: 0 15px 10px white; padding-top: 2rem; padding-bottom: 2rem;">
+                <!-- Hero Image -->
+                <img src="https://cdn.glitch.global/06d3c37a-0b44-4687-9ab7-befd31490571/G59.jpg?v=1694685884414"
+                    alt="$uicideboy$"
+                    style="max-width: 100%; height: auto; margin: 20px auto; border-radius: 5rem; box-shadow: 0 15px 10px white; ">
 
-        <p
-            style="color: grey; font-size: 20px; margin: 10px; text-align: left; padding-left: 10rem; padding-right: 10rem;">
-            If you struggle with depression, anxiety, mental health, addiction and all kinds of shit.
-            Never believe the negative voice in your head.
-            You can do anything; not just a career or chasing your dream.
-            But, to change your life.
-            If you ever feel alone or that nobody understands or that nobody is going through what you're going through.
-            You got us, you got us for life.
-            <br>
-            ...And to Those I Love, Thanks for Sticking Around
-        </p>
-    </div>
+                <!-- Main content -->
+                <p
+                    style="color: grey; font-size: 20px; margin: 10px; text-align: left; background-image: url('https://cdn.glitch.global/4c44e38d-7a67-4faf-a157-fd485a8344b4/starsss.jpg?v=1696472684231'); background-size: cover; background-repeat: no-repeat; background-position: center; padding: 20px;">
+                    If you struggle with depression, anxiety, mental health, addiction, and all kinds of stuff.
+                    Never believe the negative voice in your head.
+                    You can do anything; not just a career or chasing your dream.
+                    But, to change your life.
+                    If you ever feel alone or that nobody understands or that nobody is going through what you're going
+                    through.
+                    You got us, you got us for life.
+                    <br>
+                    ...And to Those I Love, Thanks for Sticking Around
+                </p>
 
-    <a href="" target="_blank">Temporary button</a>
+                <!-- Two Column Component -->
+                <div style="display: flex; justify-content: space-between; margin: 20px;">
 
-    <div style="background-color: silver; flex-shrink: 0;">
+                    <!-- Two Column Component with GIFs -->
+                    <div style="display: flex; justify-content: space-between; margin: 20px;">
+
+                        <div
+                            style="flex: 1; margin: 10px; padding: 20px; background-color: #f2f2f2; text-align: center;">
+                            <img src="https://cdn.glitch.global/8bf3b54c-ca6a-41a7-ba68-92bd47daf2b6/%24crim.gif?v=1696479964853"
+                                alt="$crim$"
+                                style="width: 200px; height: 200px; margin: 20px auto; border-radius: 5rem; box-shadow: 0 15px 10px white;">
+                            <h2 style="color: black;">$crim</h2>
+                        </div>
+
+                        <div
+                            style="flex: 1; margin: 10px; padding: 20px; background-color: #f2f2f2; text-align: center;">
+                            <img src="https://cdn.glitch.global/8bf3b54c-ca6a-41a7-ba68-92bd47daf2b6/RubydaCherry.gif?v=1696481899520"
+                                alt="Ruby Da Cherry"
+                                style="width: 200px; height: 200px; margin: 20px auto; border-radius: 5rem; box-shadow: 0 15px 10px white;">
+                            <h2 style="color: black;">Ruby Da Cherry</h2>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+                <!--- three columns --->
+                <div style="display: flex; justify-content: space-between; margin: 20px;">
+
+                    <!-- Scrim -->
+                    <div style="flex: 1; margin: 10px; padding: 20px; background-color: #f2f2f2; text-align: center;">
+                        <img src="https://placekitten.com/200/200" alt="Image 1"
+                            style="width: 100%; height: auto; border-radius: 5rem;">
+                        <h2 style="color: black;">Column 1</h2>
+                        <p style="color: grey;">Talk about $crim</p>
+                    </div>
+
+                    <!--- the band -->
+                    <!--- the band -->
+                    <div
+                        style="flex: 1; margin: 5px; padding: 10px; background-color: #f2f2f2; text-align: center; height: 400px;">
+                        <img src="https://placekitten.com/200/200" alt="Image 2"
+                            style="max-width: 100%; max-height: 70%; border-radius: 5rem;">
+                        <h2 style="color: black;">Column 2</h2>
+                        <p style="color: grey; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+                            $uicideboy$ is an American hip-hop duo from New Orleans, Louisiana, founded in 2014 by
+                            cousins Ruby da Cherry and $crim. <br>
+                            Via the music sharing platform SoundCloud, the duo rose to popularity for their abrasive,
+                            self-produced beats, as well as their harsh lyrical content and themes prominently featuring
+                            substance use disorder and suicidal ideation. <br>
+                            The duo are considered one of the most popular artists in the underground rap scene. <br>
+                            They own and operate their own label, G*59 Records, under which all of their music is
+                            signed. <br>
+                        </p>
+                    </div>
+
+
+                    <!-- Ruby -->
+                    <div style="flex: 1; margin: 10px; padding: 20px; background-color: #f2f2f2; text-align: center;">
+                        <img src="https://placekitten.com/200/200" alt="Image 3"
+                            style="width: 100%; height: auto; border-radius: 5rem;">
+                        <h2 style="color: black;">Column 3</h2>
+                        <p style="color: grey;">Talk about Ruby Da Cherry</p>
+                    </div>
+
+                </div>
+
+                <!-- Centered Button -->
+                <div style="text-align: center; margin: 20px;">
+                    <button
+                        style="color: white; border: none; border-radius: 5px; padding: 10px 20px; cursor: pointer;">
+                        <i class="fa-solid fa-shop" style="color: blue;"></i>
+                    </button>
+                </div>
+
+            </td>
+        </tr>
+    </table>
+
+    <!-- Footer -->
+    <div style="background-color: silver;">
         <footer style="padding: 20px; text-align: center;">
             feel free to unsubscribe
-            <a href="" target="_blank">Unsubscribe</a>
+            <a href="" target="_blank" style="padding-left: 1rem;">This is gonna be an email icon</a>
             <p>&copy; G*59 label All rights reserved.</p>
-
             <h3 style="color: beige;">10960 Wilshire Blvd, Los Angeles, CA 90024</h3>
         </footer>
     </div>
 </body>
 
 </html>
+
+<!--- 
+     
+        Add a two column component to your email with some new content.
+        Add a three column component to your email with some new content.
+        Add responsiveness to your multi-column layout
+            Make the columns stack on mobile 
+            Adjust text size also. 
+        Add Interactivity to button(s) and link(s)
+        Add animation using keyframes. (Bonus points if you use properties other than opacity and scale)
+        Apply the checked box technique to add some more interactivity to your email
+            Use radio buttons, labels, and divs
+        Use the resource tools introduced.
+            Send yourself your email code to see what a user will receive
+            Interact with it and see how they work in those different email clients. 
+            Make notes of what worked and what didn’t based on the client.
+            Report your findings (with screen shots) on a separate file (.pdf format) in the Glitch assets section
+        Revise content to set up your own email campaign. 
+            Example Emails could be
+                Recommendation to visit a product or service company website
+                Grab prospective employers interest to visit your linkedIn/resume page. 
+                If you have other ideas check with the professor.
+
+    No more placeholder images or lorem ipsum
+
+
+Matthew Garcia
+-->
